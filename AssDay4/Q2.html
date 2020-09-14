@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Question 2</title>
+  </head>
+  <body>
+    <P>
+    <input type="text" name="INPUT1" class="work" placeholder="ENTER TEXT"> <BR/><BR/>
+    <input type="text" name="INPUT2" class="work" placeholder="COPIED TEXT"> <BR/>
+  </P>
+  <button onclick="COPIED()">COPY</button>
+  <script>
+    function COPIED(){
+      const element = document.getElementsByClassName("work");
+      element[1].value = element[0].value;
+      console.log("Done")
+    }
+  </script>
+  </body>
+</html>
