@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Question 1</title>
+  </head>
+  <body>
+    <h1>FRUITS</h1>
+  <p>
+    <br/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Honeycrisp.jpg" alt="apple" height="400" width="400"class="fruitname"/>
+  <br/>CLICK BUTTONS<BR/>
+    <button onclick="FIRST()">FIRST</button><br/>
+    <button onclick="SECOND()">SECOND</button><br/>
+    <button onclick="THIRD()">THIRD</button><br/>
+  </p>
+  <script>
+    function FIRST()
+    {
+      const element = document.getElementsByClassName("fruitname").style.backgroundColor='YELLOW';
+      element[0].src = 'https://upload.wikimedia.org/wikipedia/commons/f/f4/Honeycrisp.jpg';
+    }
+    function SECOND()
+    {
+      const element = document.getElementsByClassName("fruitname");
+      element[0].src = 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Orange-Whole-%26-Split.jpg';
+    }
+    function THIRD()
+    {
+      const element = document.getElementsByClassName("fruitname");
+      element[0].src = 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Banana_and_cross_section.jpg';
+    }
+  </script>
+  </body>
+</html>
